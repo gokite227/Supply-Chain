@@ -46,6 +46,19 @@ class App extends Component {
     alert("Send "+cost+" Wei to "+result.events.SupplyChainStep.returnValues._address);
   };
 
+  listenToPaymentEvent = () => {
+    let self = this;
+    this.itemManager.events.SupplyChainStep().on("data", async function(evt) {
+      if(evt.returnValues._step == 1) {
+        let item = await self.itemManager.methods.items(evt.returnValues._itemIndex).call();
+        console.log(item);
+        alert("Item " + item._identifier + " was paid, deliver it now!");
+      };
+      console.log(evt);
+    });
+  }
+  
+
   handleInputChange = (event) => {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;

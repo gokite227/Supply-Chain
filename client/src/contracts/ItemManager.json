@@ -12169,10 +12169,16 @@
       "links": {},
       "address": "0x2023ce3274DF2BC76802B3D171B24d8202256cd5",
       "transactionHash": "0xe30def1522f5b295df6fdfa0a0547f8f2a8acd9d121f8d2843af2ffb15cfe08e"
+    },
+    "1669706777894": {
+      "events": {},
+      "links": {},
+      "address": "0xEeeD7d81D5fbd68658Cd7CaAbb287D18fc7D07Df",
+      "transactionHash": "0xc59ec743a41f6828d7eea48bd9e90e31151aad02a8cd9fb5d8e0e7abf398d9f4"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-11-25T12:50:41.944Z",
+  "updatedAt": "2022-11-29T07:51:39.317Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
